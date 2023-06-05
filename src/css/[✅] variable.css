@@ -1,0 +1,10 @@
+:root {
+    --battery-green: #7bd592;
+    --main-orange: #ffc922;
+    --main-purple: #bf00a5;
+    --main-brown: #402705;
+    --main-grey: #ededed;
+    --hover: rgb(0, 122, 255);
+    --notification-red: #ff7a6b;
+    --back-color: #ececed;
+}

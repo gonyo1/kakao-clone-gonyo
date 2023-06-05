@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now playing - Gonyo Talk</title>
+    <link rel="stylesheet" href="../css/[⭕] style.css" />
+
+</head>
+<body>
+    <div class="body-wrapper">
+        <!-- status bar-->
+        <div class="status-bar">
+            <div class="status-bar__column maindiv">
+                <span>17:41</span>
+            </div>
+            <div class="status-bar__column maindiv">
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- header -->
+        <header class="widget-header music">
+            <div>
+                <a class="widget-header__back" href="[✅] friends.html">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span class="widget-header__title">Now Playing</span>
+                <a class="topbar-wrapper__search" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </header>
+      
+        <!-- nowpayinginfo -->
+        <div class="now-playing__big-picture">
+            <img src="https://cdnimg.melon.co.kr/cm2/album/images/105/76/966/10576966_20210312112253_500.jpg">
+        </div>
+        <div class="now-playing__big-info">
+            <span>Gone</span>
+            <span>Rose</span>
+        </div>
+
+        <!-- play status bar -->
+        <div class="now-playing__progress">
+            <div>
+                <span>1:07</span>
+                <span>3:27</span>
+            </div>
+            <div class="now-playing__progress-container">
+                <div class="now-playing__progress-container__progress" id="progress">
+                </div>
+            </div>
+        </div>
+
+        <!-- play status bar -->
+        <div class="now-playing__playstatus_bar">
+            <button>
+                <i class="fa-solid fa-repeat"></i>
+            </button>
+            <button class="playstatus_bar__info__backward">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button class="playstatus_bar__info__play" status="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="playstatus_bar__info__pause" status="play">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="playstatus_bar__info__forward">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+        </div>
+      </div>
+
+
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/8d835f9dbe.js" crossorigin="anonymous"></script>
+<script src="rsc/js/viewdetail.js"></script>
+</html>

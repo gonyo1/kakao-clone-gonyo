@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Music - Gonyo Talk</title>
+  <link rel="stylesheet" href="../css/[⭕] style.css" />
+</head>
+
+<body>
+  <!-- status bar-->
+  <div class="status-bar">
+      <div class="status-bar__column maindiv">
+          <span>17:41</span>
+      </div>
+      <div class="status-bar__column maindiv">
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-full"></i>
+      </div>
+  </div>
+
+
+  <!-- header -->
+  <header class="widget-header music">
+      <div>
+          <a class="widget-header__back" href="[✅] friends.html">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <span class="widget-header__title">Music</span>
+          <a class="topbar-wrapper__search" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+      </div>
+  </header>
+
+
+  <!-- nowpayinginfo -->
+  <div class="now-playing">
+    <div class="now-playing__picture">
+      <img src="https://cdnimg.melon.co.kr/cm2/album/images/105/76/966/10576966_20210312112253_500.jpg">
+    </div>
+    <div class="now-playing__info">
+      <span class="now-playing__info__artist">Rose</span>
+      <span class="now-playing__info__detail">R&B, Soul</span>
+
+    </div>
+  </div>
+
+
+  <!-- play buttons -->
+  <div class="playlist_btns">
+    <div>
+      <button>Shuffle</button>
+      <button>
+        <span class="fa-solid fa-heart"> 212,971</span>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- playlist -->
+  <div class="playlist_li">
+    <ul>
+      <!-- 아이템 추가-->
+      <li>
+        <div>
+          <div class="playlist_li_picture">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/107/10/311/10710311_20210909184021_500.jpg">
+          </div>
+          <div class="playlist_li_info">
+            <span>BackYelin</span>
+            <span>Antifreeze</span>
+          </div>
+        </div>
+        <div>
+          <button>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </li>
+      <!-- 여기까지 복사-->
+      <li>
+        <div>
+          <div class="playlist_li_picture">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/103/62/776/10362776_20191210144641_500.jpg">
+          </div>
+          <div class="playlist_li_info">
+            <span>BackYelin</span>
+            <span>0310</span>
+          </div>
+        </div>
+        <div>
+          <button>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </li>
+      <!-- 여기까지 복사-->
+      <li>
+        <div>
+          <div class="playlist_li_picture">
+            <img
+              src="https://cdnimg.melon.co.kr/cm/album/images/026/80/542/2680542_500.jpg">
+          </div>
+          <div class="playlist_li_info">
+            <span>LeeHi</span>
+            <span>희망고문</span>
+          </div>
+        </div>
+        <div>
+          <button>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </li>
+      <!-- 여기까지 복사-->
+      <li nowplaying="true">
+        <div>
+          <div class="playlist_li_picture">
+            <div class="plyaing_animation">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img src="https://cdnimg.melon.co.kr/cm2/album/images/105/76/966/10576966_20210312112253_500.jpg">
+          </div>
+          <div class="playlist_li_info">
+            <span>Rose</span>
+            <span>Gone</span>
+          </div>
+        </div>
+        <div>
+          <button>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </li>
+      <!-- 여기까지 복사-->
+      <li>
+        <div>
+          <div class="playlist_li_picture">
+            <img src="https://cdnimg.melon.co.kr/cm2/album/images/103/49/562/10349562_500.jpg">
+          </div>
+          <div class="playlist_li_info">
+            <span>Emotional Oranges</span>
+            <span>West Coast Love</span>
+          </div>
+        </div>
+        <div>
+          <button>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </li>
+      <!-- 여기까지 복사-->
+    </ul>
+  </div>
+
+  <!-- play status bar -->
+  <div class="playstatus_bar">
+    <div class="playstatus_bar__info">
+      <span>Rose</span>
+      <span>Gone</span>
+    </div>
+    <button class="playstatus_bar__info__backward">
+      <i class="fa-solid fa-backward-step"></i>
+    </button>
+    <button class="playstatus_bar__info__play" status="play">
+      <i class="fa-solid fa-play"></i>
+    </button>
+    <button class="playstatus_bar__info__pause" status="play">
+      <i class="fa-solid fa-pause"></i>
+    </button>
+    <button class="playstatus_bar__info__forward">
+      <i class="fa-solid fa-forward-step"></i>
+    </button>
+  </div>
+
+
+  <!-- no mobile -->
+  <div id="no-mobile">
+    <span>
+      <i class="fas fa-exclamation-triangle"></i>
+      Your screen is super big
+    </span>
+  </div>
+  <script src="https://kit.fontawesome.com/8d835f9dbe.js" crossorigin="anonymous"></script>
+  <script src="../js/viewdetail.js"></script>
+</body>
+</html>

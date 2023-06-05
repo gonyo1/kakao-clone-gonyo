@@ -1,0 +1,61 @@
+/* widget title */
+.widget-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15px;
+    color: var(--main-brown);
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.widget-header.alt {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0px solid rgba(0,0,0,0.2);
+}
+.widget-header__column i {
+    margin:10px;
+}
+
+.widget-header__button {
+    font-size: 24px;
+}
+.widget-header div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widget-header__title {
+    font-size: 28px;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+.widget-header__icons i {
+    margin-left: 18px;
+}
+
+.widget-header__icons i:hover {
+    cursor: pointer;
+    color: var(--hover)
+}
+.widget-header.music {
+    justify-content: flex-start;
+
+}
+
+.widget-header.music a {
+    background: transparent;
+    border: 0px solid;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.widget-header a:hover {
+    color: var(--hover)
+}
+  

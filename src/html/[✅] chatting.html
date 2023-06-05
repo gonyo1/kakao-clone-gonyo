@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatting - Gonyo Talk</title>
+    <link rel="stylesheet" href="../css/[⭕] style.css" />
+  </head>
+
+  <body id="chat-screen">
+    <!-- status bar-->
+    <div class="status-bar">
+        <div class="status-bar__column maindiv">
+            <span>17:41</span>
+        </div>
+        <div class="status-bar__column maindiv">
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+        </div>
+    </div>
+  
+    <!-- Chatting -->
+    <header class="widget-header alt">
+        <div class="widget-header__column">
+            <a href="[✅] chats.html"> <i class="fas fa-angle-left fa-2x"></i></a>
+        </div>
+        <div class="widget-header__column">
+            <span class="widget-header__title">Friend C</span>
+        </div>
+        <div class="widget-header__column">
+            <i class="fa-solid fa-search fa-lg"></i>
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+    </header>
+
+    <!-- message -->
+    <main class="main-screen main-chat">
+      <div class="chat-timestamp">Monday, June 5, 2023</div>
+
+      <div class="message-row">
+        <img src="../img/friend2.png" />
+        <div class="message-row__content">
+          <span class="message__author">Friend C</span>
+          <div class="message__info">
+            <span class="message__bubble">오늘 가오갤3 보러갈래?</span>
+            <span class="message__time">16:57</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">헐 완전 좋지 ㅋㅋ 고고</span>
+            <span class="message__time">12:24</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-solid fa-plus-square fa-lg"></i>
+      </div>
+
+      <div class="reply__column smile">
+        <input type="text" placeholder="Write a message" />
+        <i class="fa-regular fa-face-smile fa-2xl"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+  <!-- no mobile -->
+  <div id="no-mobile">
+    <span>
+      <i class="fas fa-exclamation-triangle"></i>
+      Your screen is super big
+    </span>
+  </div>
+  <script src="https://kit.fontawesome.com/8d835f9dbe.js" crossorigin="anonymous"></script>
+  <script src="../js/viewdetail.js"></script>
+</body>
+</html>

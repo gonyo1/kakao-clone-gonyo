@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonyo Talk</title>
+    <link rel="stylesheet" href="src/css/[⭕] style.css" />
+  </head>
+
+  <body>
+    <div class="main-div">
+      <!-- status bar-->
+      <div class="status-bar">
+          <div class="status-bar__column">
+              <span>17:41</span>
+          </div>
+          <div class="status-bar__column">
+              <i class="fa-solid fa-signal"></i>
+              <i class="fa-solid fa-wifi"></i>
+              <i class="fa-solid fa-battery-full"></i>
+          </div>
+      </div>
+
+
+      <!-- welcome title -->
+      <header class="welcome-header">
+          <h1 class="welcome-header__title">Gonyo Talk</h1>
+          <p class="welcome-header__text">
+              If you have a Kokoa Account, log in with your email or phone number.
+          </p>
+      </header>
+
+
+      <!-- login -->
+      <form action="src/html/[✅] friends.html" method="get" id="login-form">
+          <input name="username" required type="text" placeholder="email or phone number" />
+          <input name="password" required type="password" placeholder="password" />
+          <input type="submit" value="Log in" />
+          <a href="#">Find Account or Password</a>
+      </form>
+
+      <div id="no-mobile">
+        <span>
+          <i class="fas fa-exclamation-triangle"></i>
+          Your screen is too big
+        </span>
+      </div>
+
+      <script src="https://kit.fontawesome.com/8d835f9dbe.js" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>

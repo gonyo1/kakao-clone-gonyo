@@ -1,0 +1,224 @@
+/* chatting */
+.chat-component {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.chat-component__column,
+.chat-component__column > div {
+    display: flex;
+    width: 100%;
+}
+.chat-component__column > div {
+    justify-content: space-between;
+}
+.chat-component__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+.chat-component__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--main-brown)
+}
+.chat-component__time {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+.chat-component__box.info {
+    align-items: flex-end;
+}
+.chat-component__count {
+    display: block;
+    bottom: 15px;
+    padding: 2px;
+    margin-right: 3px;
+    width: 20px;
+    background-color: var(--notification-red);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* 찐 메신저 파트 */
+#chat-screen {
+    background-color: var(--back-color);
+    height: 100%;
+}
+#chat-screen .widget-header {
+    background-color: var(--back-color);
+    z-index: 1;
+}
+#chat-screen .status-bar {
+    background-color: var(--back-color);
+    z-index: 2;
+}
+.chat-timestamp
+{
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    padding: 13px;
+    border-radius: 33px;
+    opacity: .8;
+    margin-bottom:25px;
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.main-chat {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    animation: fadeIn .3s linear;
+    margin: 20px;
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+
+}
+.message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.message__author {
+    font-size: 13px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.message__bubble {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+    font-size: 18px;
+    border-top-left-radius: 0;
+    margin-bottom: 2px;
+    
+}
+.message__info {
+    display: flex;
+    align-items: flex-end;
+}
+.message__time {
+    opacity: .8;
+    font-size: 13px;
+}
+.message-row--own {
+    justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+    background-color: var(--main-orange);
+    border-top-right-radius: 0;
+    border-top-left-radius: 15px;
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+}
+
+
+/*reply*/
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+}
+
+.reply .reply__column:nth-child(1) {
+    width: 10%;
+}
+
+.reply .reply__column:nth-child(2) {
+    width: 90%;
+}
+
+
+.reply input {
+    padding-right: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 20px;
+}
+.reply input::placeholder {
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.reply__column.smile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reply__column.smile input {
+    width: 80%;
+}
+.reply__column.smile i,button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 10%;
+}
+.reply__column.smile button {
+    background-color: var(--main-orange);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+}
+.reply__column button:focus,
+.reply__column button:active {
+    outline: none;
+}
+
+.reply__column > i {
+    opacity: .5;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile {
+    visibility: hidden;
+}
+
+.reply:focus-within input {
+    width: 80%;
+    transform: translateX(-15%)
+}
+.reply .reply__column:first-child,
+.reply .fa-smile {
+    transition: opacity 1s ease-in-out;
+}
