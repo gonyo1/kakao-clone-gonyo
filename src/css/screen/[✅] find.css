@@ -64,7 +64,7 @@
 /* 오픈포스트 */
 .open-article {
     overflow: scroll;
-    height: 260px;
+    height: auto;
     scrollbar-width: none;
 }
 .open-article::-webkit-scrollbar {

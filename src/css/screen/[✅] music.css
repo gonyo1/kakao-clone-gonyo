@@ -53,10 +53,11 @@
 /* play button*/
 .playlist_btns {
   width: 100%;
-  font-size: 22px;
+  font-size: 24px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 .playlist_btns button {
   font-weight: 700;
@@ -77,9 +78,6 @@
   color: rgba(0, 0, 0, 0.6);
   margin-left: 20px;
 }
-.playlist_btns button i {
-  color: black;
-}
 .playlist_btns button:nth-child(2):hover {
   color: rgb(255, 55, 0);
 }
@@ -91,8 +89,9 @@
     margin-top: 30px;
     padding: 0px 80px;
     overflow: scroll;
-    height: 330px;
+    height: auto;
     scrollbar-width: none;
+    border: 1px solid blue;
 }
 .playlist_li::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
@@ -197,13 +196,15 @@
 
 /* play status bar*/
 .playstatus_bar {
+    position: fixed;
+    bottom: 10px;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    margin-bottom: 0;
-    margin: 20px 40px;
+    margin: 20px 45px;
+    width: 70%;
     cursor: pointer;
 }
 .playstatus_bar__info {
@@ -248,7 +249,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 .now-playing__big-picture img {
     width: 70%;
